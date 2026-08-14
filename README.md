@@ -45,16 +45,18 @@ The gate runs **after** the SDK run returns. The scripted model never receives t
 
 Every case also asserts that ordinary tool text reaches the model while NRW evidence markers do not appear in model input or `history`.
 
-## Why `ScriptedModel`
+## Why a deterministic custom model
 
-This is an agent-runtime integration test, not a model-quality test. The SDK's public deterministic `ScriptedModel` drives one MCP-style tool call and a final assistant message, so the repository requires no OpenAI API key and introduces no model judgment into the evidence decision.
+This is an agent-runtime integration test, not a model-quality test. A minimal deterministic `Model` implementation drives one MCP-style tool call and a final assistant message through the public OpenAI Agents SDK model interface.
+
+No OpenAI API key or model endpoint is used, and the model does not judge NRW evidence or decide whether the downstream effect executes.
 
 ## Run
 
 Requires Node.js 22+.
 
 ```bash
-npm install
+npm ci
 npm run check
 ```
 
