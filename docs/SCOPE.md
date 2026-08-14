@@ -8,7 +8,7 @@ It isolates one question:
 
 The recorded evidence fixture comes from the public `negative-result-warrant` Phase 3 Algolia run. No live Algolia request is made here.
 
-The OpenAI Agents SDK model is a deterministic `ScriptedModel`. No OpenAI model API call or API key is required. The model controls only the ordinary tool-call flow. It does **not** decide whether NRW evidence is valid or whether the effect executes.
+The OpenAI Agents SDK model is a minimal deterministic custom `Model` implementation using the public SDK model interface. No OpenAI model API call or API key is required. The model controls only the ordinary tool-call flow. It does **not** decide whether NRW evidence is valid or whether the effect executes.
 
 ## Explicit nonclaims
 
