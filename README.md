@@ -32,7 +32,7 @@ negative-premise gate
 PASS / BLOCK
 ```
 
-The gate runs **after** the SDK run returns. The scripted model never receives the NRW metadata and never decides PASS/BLOCK.
+The gate runs **after** the SDK run returns. The deterministic model never receives the NRW metadata and never decides PASS/BLOCK.
 
 ## Four required controls
 
