@@ -51,8 +51,11 @@ export interface ConsumerCaseResult {
 class DeterministicConsumerModel implements Model {
   readonly calls: ModelRequest[] = [];
   private nextStep = 0;
+  private readonly toolName: string;
 
-  constructor(private readonly toolName: string) {}
+  constructor(toolName: string) {
+    this.toolName = toolName;
+  }
 
   async getResponse(request: ModelRequest): Promise<ModelResponse> {
     this.calls.push(request);
