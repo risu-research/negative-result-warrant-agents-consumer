@@ -1,0 +1,215 @@
+{
+  "kind": "ALGOLIA_REAL_SOURCE_NEGATIVE_EVIDENCE",
+  "version": "0.3.0",
+  "sourceInstance": {
+    "provider": "algolia",
+    "applicationId": "latency",
+    "sourceInstanceId": "algolia-app:latency"
+  },
+  "authorityContextId": "algolia-search-key-sha256:a46d4e0bff97a653de3a9c0ecd9ba874902c13d7dbd45a3720b6d86d44d3cc27",
+  "credentialBinding": {
+    "algorithm": "SHA-256",
+    "representation": "exact-credential-bytes-sha256-fingerprint",
+    "digest": "a46d4e0bff97a653de3a9c0ecd9ba874902c13d7dbd45a3720b6d86d44d3cc27",
+    "byteLength": 32
+  },
+  "verificationCapture": {
+    "adapterVersion": "0.3.0",
+    "rawRequestBodyBinding": {
+      "algorithm": "SHA-256",
+      "representation": "exact-http-body-bytes",
+      "digest": "c9f8db7da22841e20ec68d938488733adc743350d86cb248e30345b6b0e59ccc",
+      "byteLength": 138
+    },
+    "rawResponseBodyBinding": {
+      "algorithm": "SHA-256",
+      "representation": "exact-http-body-bytes",
+      "digest": "679f5efc1eee0dbd8c4ba191d3fe40cf47e7ae41fd355ce4ff436216ab8d0dd1",
+      "byteLength": 712
+    },
+    "normalizedRequestBinding": {
+      "algorithm": "SHA-256",
+      "representation": "exact-profile-input-bytes",
+      "digest": "526a0793508f4905429088c9b0a4b20636974f11418ec9e25ec359c1c3d31122",
+      "byteLength": 190
+    },
+    "normalizedResponseBinding": {
+      "algorithm": "SHA-256",
+      "representation": "exact-profile-input-bytes",
+      "digest": "c8ea6e1c9c232a4b92822fc089751f0cf51172767f840e19934e8d96f92eb077",
+      "byteLength": 712
+    }
+  },
+  "boundEvidence": {
+    "kind": "BOUND_NEGATIVE_EVIDENCE",
+    "version": "0.2.2",
+    "proposition": {
+      "profile": {
+        "id": "algolia-search",
+        "version": "0.2.1"
+      },
+      "sourceScopeIdentity": "algolia:/1/indexes/bestbuy/query:requested=bestbuy:effective=bestbuy",
+      "matchPredicateIdentity": "sha256:1765789af78e64de8a62255220bbf0bb94b74a0a8a73fdc54ac07fde457a7ed0",
+      "authorityContextId": "algolia-search-key-sha256:a46d4e0bff97a653de3a9c0ecd9ba874902c13d7dbd45a3720b6d86d44d3cc27"
+    },
+    "sourceWarrant": {
+      "version": "0.2.1",
+      "verdict": "WARRANTED_ZERO",
+      "profile": {
+        "id": "algolia-search",
+        "version": "0.2.1"
+      },
+      "requestBinding": {
+        "algorithm": "SHA-256",
+        "representation": "exact-profile-input-bytes",
+        "digest": "526a0793508f4905429088c9b0a4b20636974f11418ec9e25ec359c1c3d31122",
+        "byteLength": 190
+      },
+      "observationBinding": {
+        "observationId": "20260814T013017406Z-fd070306-verification",
+        "response": {
+          "algorithm": "SHA-256",
+          "representation": "exact-profile-input-bytes",
+          "digest": "c8ea6e1c9c232a4b92822fc089751f0cf51172767f840e19934e8d96f92eb077",
+          "byteLength": 712
+        }
+      },
+      "scope": {
+        "provider": "algolia",
+        "endpoint": "/1/indexes/bestbuy/query",
+        "entitySet": "index-records",
+        "queryBinding": {
+          "algorithm": "SHA-256",
+          "representation": "exact-profile-input-bytes",
+          "digest": "526a0793508f4905429088c9b0a4b20636974f11418ec9e25ec359c1c3d31122",
+          "byteLength": 190
+        },
+        "visibility": {
+          "kind": "source-effective-view-only",
+          "authorityContextId": "algolia-search-key-sha256:a46d4e0bff97a653de3a9c0ecd9ba874902c13d7dbd45a3720b6d86d44d3cc27"
+        },
+        "requestedIndex": "bestbuy",
+        "effectiveIndex": "bestbuy"
+      },
+      "proposition": {
+        "profile": {
+          "id": "algolia-search",
+          "version": "0.2.1"
+        },
+        "sourceScopeIdentity": "algolia:/1/indexes/bestbuy/query:requested=bestbuy:effective=bestbuy",
+        "matchPredicateIdentity": "sha256:1765789af78e64de8a62255220bbf0bb94b74a0a8a73fdc54ac07fde457a7ed0",
+        "authorityContextId": "algolia-search-key-sha256:a46d4e0bff97a653de3a9c0ecd9ba874902c13d7dbd45a3720b6d86d44d3cc27"
+      },
+      "obligations": [
+        {
+          "id": "PROFILE_EXPLICIT",
+          "kind": "SUPPORT",
+          "state": "SATISFIED",
+          "reasonCode": "SUPPORTED_PROFILE_SELECTED_EXPLICITLY"
+        },
+        {
+          "id": "REQUEST_BOUND",
+          "kind": "SUPPORT",
+          "state": "SATISFIED",
+          "reasonCode": "EXACT_PROFILE_INPUT_REQUEST_BYTES_BOUND"
+        },
+        {
+          "id": "RESPONSE_BOUND",
+          "kind": "SUPPORT",
+          "state": "SATISFIED",
+          "reasonCode": "EXACT_PROFILE_INPUT_RESPONSE_BYTES_BOUND"
+        },
+        {
+          "id": "OBSERVATION_BOUND",
+          "kind": "SUPPORT",
+          "state": "SATISFIED",
+          "reasonCode": "OBSERVATION_IDENTIFIER_BOUND"
+        },
+        {
+          "id": "VISIBILITY_CONTEXT_BOUND",
+          "kind": "SUPPORT",
+          "state": "SATISFIED",
+          "reasonCode": "SOURCE_EFFECTIVE_AUTHORITY_CONTEXT_BOUND"
+        },
+        {
+          "id": "RANKING_INFO_REQUESTED",
+          "kind": "SUPPORT",
+          "state": "SATISFIED",
+          "reasonCode": "REQUIRED_VALUE_CONFIRMED"
+        },
+        {
+          "id": "AB_TEST_PARTICIPATION_DISABLED",
+          "kind": "SUPPORT",
+          "state": "SATISFIED",
+          "reasonCode": "REQUIRED_VALUE_CONFIRMED"
+        },
+        {
+          "id": "REQUEST_TARGET_CONSISTENT",
+          "kind": "SUPPORT",
+          "state": "SATISFIED",
+          "reasonCode": "REQUEST_PATH_TARGETS_DECLARED_INDEX"
+        },
+        {
+          "id": "EFFECTIVE_INDEX_WITNESSED",
+          "kind": "SUPPORT",
+          "state": "SATISFIED",
+          "reasonCode": "SOURCE_REPORTED_EFFECTIVE_INDEX"
+        },
+        {
+          "id": "SOURCE_SCOPE_RESOLVED",
+          "kind": "SUPPORT",
+          "state": "SATISFIED",
+          "reasonCode": "EFFECTIVE_INDEX_RESOLVED"
+        },
+        {
+          "id": "ZERO_CARDINALITY",
+          "kind": "SUPPORT",
+          "state": "SATISFIED",
+          "reasonCode": "ZERO_COUNT_OBSERVED"
+        },
+        {
+          "id": "EXACT_CARDINALITY",
+          "kind": "SUPPORT",
+          "state": "SATISFIED",
+          "reasonCode": "REQUIRED_VALUE_CONFIRMED"
+        },
+        {
+          "id": "RULE_MATCHING_COMPLETE",
+          "kind": "DEFEATER",
+          "state": "SATISFIED",
+          "reasonCode": "NO_RULE_MATCH_INCOMPLETENESS_REPORTED"
+        },
+        {
+          "id": "PROPOSITION_DERIVED",
+          "kind": "SUPPORT",
+          "state": "SATISFIED",
+          "reasonCode": "ZERO_PROPOSITION_DERIVED"
+        }
+      ],
+      "reasonCodes": [
+        "SOURCE_OBSERVATION_WARRANTS_ZERO"
+      ]
+    },
+    "verificationObservation": {
+      "profile": "algolia-search",
+      "observationId": "20260814T013017406Z-fd070306-verification",
+      "requestBinding": {
+        "algorithm": "SHA-256",
+        "representation": "exact-profile-input-bytes",
+        "digest": "526a0793508f4905429088c9b0a4b20636974f11418ec9e25ec359c1c3d31122",
+        "byteLength": 190
+      },
+      "responseBinding": {
+        "algorithm": "SHA-256",
+        "representation": "exact-profile-input-bytes",
+        "digest": "c8ea6e1c9c232a4b92822fc089751f0cf51172767f840e19934e8d96f92eb077",
+        "byteLength": 712
+      },
+      "authorityContextId": "algolia-search-key-sha256:a46d4e0bff97a653de3a9c0ecd9ba874902c13d7dbd45a3720b6d86d44d3cc27"
+    },
+    "mode": "PROPOSITION_PRESERVING_VERIFICATION",
+    "preservationReasonCodes": [
+      "ALGOLIA_RANKING_INFO_METADATA_ENABLED"
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "version": "0.3.0",
+  "runId": "20260814T013017406Z-fd070306",
+  "preparedAt": "2026-08-14T01:30:17.406Z",
+  "precommit": true,
+  "networkRequestsSentAtPreparation": 0,
+  "plannedAlgoliaNetworkRequests": 2,
+  "source": {
+    "provider": "algolia",
+    "applicationId": "latency",
+    "sourceInstanceId": "algolia-app:latency",
+    "index": "bestbuy",
+    "endpoint": "https://latency-dsn.algolia.net/1/indexes/bestbuy/query"
+  },
+  "credential": {
+    "stored": false,
+    "classification": "official-public-search-only-demo-credential",
+    "fingerprintSha256": "a46d4e0bff97a653de3a9c0ecd9ba874902c13d7dbd45a3720b6d86d44d3cc27",
+    "authorityContextId": "algolia-search-key-sha256:a46d4e0bff97a653de3a9c0ecd9ba874902c13d7dbd45a3720b6d86d44d3cc27"
+  },
+  "query": {
+    "token": "risu-nrw-017a2d4235319959bbc7d882fd070306",
+    "generatedRandomBits": 128,
+    "generationCount": 1
+  },
+  "fixedMatchingControls": {
+    "enableABTest": false,
+    "typoTolerance": false,
+    "enableRules": false
+  },
+  "requests": {
+    "ordinary": {
+      "bodyUtf8": "{\"enableABTest\":false,\"enableRules\":false,\"query\":\"risu-nrw-017a2d4235319959bbc7d882fd070306\",\"typoTolerance\":false}",
+      "bodyBinding": {
+        "algorithm": "SHA-256",
+        "representation": "exact-http-body-bytes",
+        "digest": "c10d31fde423599306a71fc4949ecbc13a718ee474faffc275d6ad360de13ef0",
+        "byteLength": 116
+      },
+      "getRankingInfo": "absent"
+    },
+    "verification": {
+      "bodyUtf8": "{\"enableABTest\":false,\"enableRules\":false,\"getRankingInfo\":true,\"query\":\"risu-nrw-017a2d4235319959bbc7d882fd070306\",\"typoTolerance\":false}",
+      "bodyBinding": {
+        "algorithm": "SHA-256",
+        "representation": "exact-http-body-bytes",
+        "digest": "c9f8db7da22841e20ec68d938488733adc743350d86cb248e30345b6b0e59ccc",
+        "byteLength": 138
+      },
+      "getRankingInfo": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+2866d590ae74ec119f909b9daf7f3e9340368693148d11e1a6391a54edd9c6b2  vendor/nrw/frozen/phase2.1/src/acquisition.ts
+5247750d3cf15f5ea90949716fbe6731538c7ed0cfc09b3159a5154e5b1d7e1c  vendor/nrw/frozen/phase2.1/src/composition.ts
+6bc6d79369fd00addb7ceffcdbfd68315032ca9fd7fee169170a61c0c119a063  vendor/nrw/frozen/phase2.1/src/envelope.ts
+71dbb9bca5488f492e94269145b4bbb1138fd3283d975cc231af38e1b5154568  vendor/nrw/frozen/phase2.1/src/evaluator.ts
+bec525d8526f508a6c298cb3192a1c6a378f0c3c3664c5a3a0f19334ba745275  vendor/nrw/frozen/phase2.1/src/gate.ts
+9e866e20873cab9dfa786bf9dbabe5d5d6029176c418e435f00c9c0d8a62877f  vendor/nrw/frozen/phase2.1/src/index.ts
+58c75a9ceb9c960fda2593c7ec65cfd4ce40bd2020a8e91ef0e83f3b067d01b6  vendor/nrw/frozen/phase2.1/src/mcp.ts
+edf229d935c6e3c94ab4a52e77f9fb73ccce8e2cac25dd6c20b603ebe39d9ce6  vendor/nrw/frozen/phase2.1/src/officialMcp.ts
+bc6e6d349337169360edfc33e6272c79bf7d9a3910df5857c47891c051609e6a  vendor/nrw/frozen/phase2.1/src/profiles.ts
+fb7c78104a38282bc0b670e4f2ec20ac0471046911843b79accd6138cf28d62d  vendor/nrw/frozen/phase2.1/src/proposition.ts
+7814dba6a193423392b6e3c2887c582d63354eb5adc68948d52c9f91c15eec51  vendor/nrw/frozen/phase2.1/src/receiver.ts
+b51ebcb5a7920d59469b6b3fbcf93d844bfafaaa238e342e21c594f113c189cc  vendor/nrw/frozen/phase2.1/src/types.ts
+b98b22566956ecf2ff53823031a0ea2883fe4d57ff4ed644111eb2de005b2843  vendor/nrw/src/real-source-evidence.ts
+0a66a40323000b9c1d945296cdd71332827db314bec68e47e5a6af72240e9f40  vendor/nrw/src/types.ts

@@ -1,0 +1,26 @@
+{
+  "name": "negative-result-warrant-agents-consumer",
+  "version": "0.1.0-rc.1",
+  "private": true,
+  "type": "module",
+  "description": "Reference consumer for Negative Result Warrant using the OpenAI Agents SDK.",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "OPENAI_AGENTS_DISABLE_TRACING=1 node --experimental-strip-types --test --test-reporter=spec tests/*.test.ts",
+    "check": "npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.0.0",
+    "@modelcontextprotocol/server": "2.0.0",
+    "@openai/agents": "0.15.0",
+    "zod": "4.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.3.0",
+    "typescript": "5.9.2"
+  }
+}
