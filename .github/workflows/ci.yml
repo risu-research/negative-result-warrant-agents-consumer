@@ -1,0 +1,31 @@
+name: verify-consumer
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  consumer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify vendored NRW source hashes
+        run: sha256sum -c vendor/SOURCE-HASHES.sha256
+      - name: Verify recorded evidence fixture hashes
+        run: sha256sum -c fixtures/FIXTURE-HASHES.sha256
+      - name: Install exact top-level dependencies
+        run: npm install --ignore-scripts
+      - name: Typecheck and run deterministic consumer witness
+        run: npm run check
+      - name: Preserve generated lockfile for pinning after first green run
+        uses: actions/upload-artifact@v4
+        with:
+          name: package-lock
+          path: package-lock.json
+          if-no-files-found: error
