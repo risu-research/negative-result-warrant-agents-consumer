@@ -9,7 +9,7 @@ import {
   ScriptedModel,
   assistantMessage,
   functionCall,
-} from "@openai/agents/testing";
+} from "@openai/agents-core/testing";
 import {
   decodeAlgoliaRealSourceEvidence,
 } from "../vendor/nrw/src/real-source-evidence.ts";
